@@ -17,14 +17,14 @@
   "devDependencies": {},
   "scripts": {
     "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build",
-    "start": "node server.js"
+    "start": "cd sever && node index.js"
   },
   "scripts-other": {
     "start": "run-p start:** server",
     "start:app": "cd client && npm run start",
     "production": "run-p production:** server",
     "production:build": "cd client && npm run build",
-    "server": "nodemon server/server.js",
+    "server": "nodemon server/index.js",
     "client": "cd client && npm start",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "test": "echo \"Error: no test specified\" && exit 1"
