@@ -1,13 +1,7 @@
 import React, {useState, useEffect} from "react";
 import axios from 'axios';
 
-import Map from './components/Map';
-
 function App() {
-  return <Map />
-}
-
-function X() {
   const[eventData, setEventData]  = useState([]);
   const[loading, setLoading]  = useState(false);
 
