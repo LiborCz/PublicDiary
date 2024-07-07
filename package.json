@@ -1,6 +1,6 @@
 {
   "name": "lost-and-found",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MERN App using Google Maps - deployed to Heroku",
   "main": "server.js",
   "dependencies": {
